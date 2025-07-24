@@ -26,55 +26,56 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-<style>
-    .social-icons {
-      position: fixed;
-      top: 50%;
-      right: -17%;
-      transform: translateY(-50%);
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      z-index: 999;
-    }
 
-    .social-icons a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 50px;
-      height: 50px;
-      background-color: #25D366; /* واتساب افتراضي */
-      border-radius: 0 8px 8px 0;
-      color: white;
-      text-decoration: none;
-      transition: all 0.3s ease;
-    }
-
-    .social-icons a.facebook {
-      background-color: #1877f2;
-    }
-
-    .social-icons a:hover {
-      transform: scale(1.1);
-    }
-
-    .social-icons i {
-      font-size: 24px;
-    }
-  </style>
-
-  <!-- Font Awesome لتحميل الأيقونات -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-<Style>
+           <!-- Font Awesome لتحميل الأيقونات -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+    
+   /* تنسيقات الأيقونات الأساسية - تنطبق على جميع الشاشات */
+.social-icons {
+  position: fixed; /* يجعل العنصر ثابتًا بالنسبة لإطار العرض */
+  top: 50%; /* يضع العنصر في منتصف الارتفاع الرأسي */
+  right: -17%; /* تم تغيير هذه الخاصية لوضع الأيقونات على اليمين */
+  transform: translateY(-50%); /* لضبط التوسيط العمودي */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 999999; /* قيمة عالية جدًا لضمان الظهور فوق كل شيء آخر */
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #25D366; /* لون واتساب */
+  border-radius: 8px 0 0 8px; /* تم تعديل هذه الخاصية لجعل الاستدارة في الزوايا اليسرى */
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: -2px 2px 8px rgba(0,0,0,0.2); /* تعديل الظل ليتناسب مع الجانب الأيمن */
+}
+
+.social-icons a.facebook {
+  background-color: #1877f2; /* لون فيسبوك */
+}
+
+.social-icons a:hover {
+  transform: scale(1.1); /* تأثير تكبير عند التمرير */
+}
+
+.social-icons i {
+  font-size: 24px; /* حجم الأيقونة */
+}
 
 
-/* مثال: استثناء الصور من الانعكاس */
 
+    
+</style>
 
-</Style>
 </head>
 
 <body>
