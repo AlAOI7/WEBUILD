@@ -26,7 +26,46 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+<style>
+    .social-icons {
+      position: fixed;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 999;
+    }
 
+    .social-icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      background-color: #25D366; /* واتساب افتراضي */
+      border-radius: 0 8px 8px 0;
+      color: white;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .social-icons a.facebook {
+      background-color: #1877f2;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.1);
+    }
+
+    .social-icons i {
+      font-size: 24px;
+    }
+  </style>
+
+  <!-- Font Awesome لتحميل الأيقونات -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 <Style>
@@ -39,6 +78,17 @@
 </head>
 
 <body>
+
+    
+  <!-- الأيقونات -->
+  <div class="social-icons">
+    <a href="https://wa.me/+967773748697 " target="_blank" title="تواصل واتساب">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://facebook.com/yourpage" class="facebook" target="_blank" title="صفحتنا على فيسبوك">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+  </div>
   <!-- بداية الشريط العلوي -->
     <div class="container-fluid px-5 d-none d-lg-block">
         <div class="row gx-5">
