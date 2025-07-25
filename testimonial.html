@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="utf-8">
@@ -27,11 +27,52 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+           <!-- Font Awesome لتحميل الأيقونات -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+ <style>
+    .fixed-icons {
+      position: fixed;
+      top: 50%;
+      left: 20px;
+      z-index: 9999; /* تأكد أنها فوق كل العناصر */
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .fixed-icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #25D366; /* لون واتساب */
+      color: white;
+      text-decoration: none;
+      font-size: 24px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+   
+  </style>
+
 </head>
 
 <body>
+
+    
+  <!-- الأيقونات -->
+ <div class="fixed-icons">
+    <a href="https://wa.me/966500000000" target="_blank" title="واتساب">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:966500000000" class="phone" style="background-color:#002fff"  title="اتصال">
+      <i class="fas fa-phone"></i>
+    </a>
+  </div>
    <!-- بداية الشريط العلوي -->
     <div class="container-fluid px-5 d-none d-lg-block">
         <div class="row gx-5">
@@ -103,51 +144,139 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header">
         <h1 class="display-3 text-uppercase text-white mb-3">Testimonial</h1>
-        <div class="d-inline-flex text-white">
-            <h6 class="text-uppercase m-0"><a href="">Home</a></h6>
-            <h6 class="text-white m-0 px-3">/</h6>
-            <h6 class="text-uppercase text-white m-0">Testimonial</h6>
-        </div>
+    
     </div>
     <!-- Page Header Start -->
+ <style>
+        .rating {
+            color: #FFD700; /* لون النجوم */
+        }
+        .testimonial {
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
 
-
-  <!-- بداية قسم الشهادات -->
-<div class="container-fluid bg-light py-6 px-5">
-    <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-        <h1 class="display-5 text-uppercase mb-4">ماذا يقول <span class="text-primary">عملاؤنا السعداء</span>!!!</h1>
-    </div>
-    <div class="row gx-0 align-items-center">
-        <div class="col-xl-4 col-lg-5 d-none d-lg-block">
-            <img class="img-fluid w-100 h-100" src="img/testimonial.jpg">
+    <div class="container-fluid bg-light py-6 px-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h1 class="display-5 text-uppercase mb-4">آراء <span class="text-primary">عملائنا السعداء</span></h1>
         </div>
-        <div class="col-xl-8 col-lg-7 col-md-12">
-            <div class="testimonial bg-light">
-                <div class="owl-carousel testimonial-carousel">
-                    <div class="row gx-4 align-items-center">
-                        <div class="col-xl-4 col-lg-5 col-md-5">
-                            <img class="img-fluid w-100 h-100 bg-light p-lg-3 mb-4 mb-md-0" src="img/testimonial-1.jpg" alt="">
-                        </div>
-                        <div class="col-xl-8 col-lg-7 col-md-7">
-                            <h4 class="text-uppercase mb-0">اسم العميل</h4>
-                            <p>المهنة</p>
-                            <p class="fs-5 mb-0"><i class="fa fa-2x fa-quote-left text-primary me-2"></i> دولوريس سيد دوو كلتا تيمبور جوستو دولور إت ستت لورم كاسد لابور دولور لورم إيبسوم. آت لورم لورم ماجنا أوت لابور إت تيمبور ديام تيمبور إرات. إرات دولور ريبوم سيت إيبسوم.</p>
-                        </div>
+        <div class="row gx-0 align-items-center">
+            <div class="col-lg-8 mx-auto">
+                <div class="testimonial bg-light">
+                    <div class="mb-4">
+                        <h5>عميل 1:</h5>
+                        <p class="fs-5 mb-0"><i class="fa fa-2x fa-quote-left text-primary me-2"></i> كانت تجربتي رائعة! الجودة عالية والخدمة ممتازة.</p>
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </span>
+                        <span>(4.5 من 5)</span>
                     </div>
-                    <div class="row gx-4 align-items-center">
-                        <div class="col-xl-4 col-lg-5 col-md-5">
-                            <img class="img-fluid w-100 h-100 bg-light p-lg-3 mb-4 mb-md-0" src="img/testimonial-2.jpg" alt="">
-                        </div>
-                        <div class="col-xl-8 col-lg-7 col-md-7">
-                            <h4 class="text-uppercase mb-0">اسم العميل</h4>
-                            <p>المهنة</p>
-                            <p class="fs-5 mb-0"><i class="fa fa-2x fa-quote-left text-primary me-2"></i> دولوريس سيد دوو كلتا تيمبور جوستو دولور إت ستت لورم كاسد لابور دولور لورم إيبسوم. آت لورم لورم ماجنا أوت لابور إت تيمبور ديام تيمبور إرات. إرات دولور ريبوم سيت إيبسوم.</p>
-                        </div>
+                    <div class="mb-4">
+                        <h5>عميل 2:</h5>
+                        <p class="fs-5 mb-0"><i class="fa fa-2x fa-quote-left text-primary me-2"></i> فريق محترف للغاية ونتائج فوق التوقعات. أنصح بالتعامل معهم.</p>
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <span>(5 من 5)</span>
+                    </div>
+                    <div class="mb-4">
+                        <h5>عميل 3:</h5>
+                        <p class="fs-5 mb-0"><i class="fa fa-2x fa-quote-left text-primary me-2"></i> تجربة مدهشة! سأعود بالتأكيد لمزيد من المشاريع في المستقبل.</p>
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                        </span>
+                        <span>(4 من 5)</span>
+                    </div>
+                    <div class="mb-4">
+                        <h5>عميل 4:</h5>
+                        <p class="fs-5 mb-0"><i class="fa fa-2x fa-quote-left text-primary me-2"></i> خدمة عملاء ممتازة واهتمام بالتفاصيل. شكراً لكم!</p>
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <span>(5 من 5)</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+  <!-- بداية قسم الشهادات -->
+<div class="container-fluid bg-light py-6 px-5">
+    
+  <style>
+        .rating {
+            color: #e5ff00; /* لون النجوم */
+        }
+        .progress {
+            height: 20px;
+        }
+        .testimonial {
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+
+    <div class="container-fluid bg-light py-6 px-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h1 class="display-5 text-uppercase mb-4">تقييماتنا</h1>
+        </div>
+        <div class="row gx-0 align-items-center">
+            <div class="col-lg-8 mx-auto">
+                <div class="testimonial bg-light">
+                    <h4 class="text-uppercase mb-4">نظرة عامة على الأداء</h4>
+                    <div class="mb-4">
+                        <h5>سنوات الخبرة: <span class="font-weight-bold">10 سنوات</span></h5>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 90%;">90%</div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h5>عدد المشاريع المنفذة: <span class="font-weight-bold">150 مشروع</span></h5>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 85%;">85%</div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h5>عدد العملاء السعداء: <span class="font-weight-bold">120 عميل</span></h5>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 95%;">95%</div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h5>تقييم العملاء:</h5>
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </span>
+                        <span>(4.5 من 5)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 <!-- نهاية قسم الشهادات -->
 
@@ -191,29 +320,29 @@
                         <a class="text-white-50" href="#"><i class="fa fa-angle-right me-2"></i>اتصل بنا</a>
                     </div>
                 </div>
-                <div class="col-sm-12">
-                    <h4 class="text-white text-uppercase mb-4">النشرة الإخبارية</h4>
-                    <div class="w-100">
-                        <div class="input-group">
-                            <input type="text" class="form-control border-light" style="padding: 20px 30px;" placeholder="عنوان بريدك الإلكتروني"><button class="btn bg-primary px-4">اشتراك</button>
-                        </div>
-                    </div>
-                </div>
+            
             </div>
         </div>
     </div>
 </div>
-<div class="container-fluid bg-dark bg-light-radial text-white border-top border-primary px-0">
-    <div class="d-flex flex-column flex-md-row justify-content-between">
-        <div class="py-4 px-5 text-center text-md-start">
-            <p class="mb-0">&copy; <a class="text-primary" href="#">اسم موقعك</a>. جميع الحقوق محفوظة.</p>
-        </div>
-        <div class="py-4 px-5 bg-primary footer-shape position-relative text-center text-md-end">
-            <p class="mb-0">تم التصميم بواسطة <a class="text-dark" href="https://htmlcodex.com">HTML Codex</a></p>
-            <p class="mb-0">موزع بواسطة <a class="text-dark" href="https://themewagon.com">ThemeWagon</a></p>
+ <style>
+        .centered-container {
+            display: flex;
+            justify-content: center; /* أفقياً */
+            align-items: center; /* عمودياً */
+            height: 10vh; /* ارتفاع كامل الشاشة */
+        }
+    </style>
+
+    <div class="container-fluid bg-dark bg-light-radial text-center text-white border-top border-primary px-0 centered-container">
+        <div class="d-flex flex-column flex-md-row justify-content-between">
+            <div class="py-4 px-5 text-center text-md-start">
+                <p class="mb-0">&copy; <a class="text-primary" href="#">المقاولات والبناء الحديث</a>. جميع الحقوق محفوظة.</p>
+            </div>
         </div>
     </div>
-</div>
+
+
 <!-- نهاية التذييل -->
 
 

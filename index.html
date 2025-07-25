@@ -31,50 +31,33 @@
            <!-- Font Awesome لتحميل الأيقونات -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<style>
-    
-   /* تنسيقات الأيقونات الأساسية - تنطبق على جميع الشاشات */
-.social-icons {
-  position: fixed; /* يجعل العنصر ثابتًا بالنسبة لإطار العرض */
-  top: 50%; /* يضع العنصر في منتصف الارتفاع الرأسي */
-  right: -17%; /* تم تغيير هذه الخاصية لوضع الأيقونات على اليمين */
-  transform: translateY(-50%); /* لضبط التوسيط العمودي */
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  z-index: 999999; /* قيمة عالية جدًا لضمان الظهور فوق كل شيء آخر */
-}
+ <style>
+    .fixed-icons {
+      position: fixed;
+      top: 50%;
+      left: 20px;
+      z-index: 9999; /* تأكد أنها فوق كل العناصر */
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
 
-.social-icons a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  background-color: #25D366; /* لون واتساب */
-  border-radius: 8px 0 0 8px; /* تم تعديل هذه الخاصية لجعل الاستدارة في الزوايا اليسرى */
-  color: white;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: -2px 2px 8px rgba(0,0,0,0.2); /* تعديل الظل ليتناسب مع الجانب الأيمن */
-}
+    .fixed-icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #25D366; /* لون واتساب */
+      color: white;
+      text-decoration: none;
+      font-size: 24px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
 
-.social-icons a.facebook {
-  background-color: #1877f2; /* لون فيسبوك */
-}
-
-.social-icons a:hover {
-  transform: scale(1.1); /* تأثير تكبير عند التمرير */
-}
-
-.social-icons i {
-  font-size: 24px; /* حجم الأيقونة */
-}
-
-
-
-    
-</style>
+   
+  </style>
 
 </head>
 
@@ -82,12 +65,12 @@
 
     
   <!-- الأيقونات -->
-  <div class="social-icons">
-    <a href="https://wa.me/+967773748697 " target="_blank" title="تواصل واتساب">
+ <div class="fixed-icons">
+    <a href="https://wa.me/966500000000" target="_blank" title="واتساب">
       <i class="fab fa-whatsapp"></i>
     </a>
-    <a href="https://facebook.com/yourpage" class="facebook" target="_blank" title="صفحتنا على فيسبوك">
-      <i class="fab fa-facebook-f"></i>
+    <a href="tel:966500000000" class="phone" style="background-color:#002fff"  title="اتصال">
+      <i class="fas fa-phone"></i>
     </a>
   </div>
   <!-- بداية الشريط العلوي -->
@@ -470,161 +453,137 @@
         </div>
     </div>
 </div>
-<!-- نهاية قسم المشاريع -->
-  <!-- Team Start -->
-<div class="container-fluid py-6 px-5">
-    <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-        <h1 class="display-5 text-uppercase mb-4">نحن <span class="text-primary">محترفون وخبراء</span> في عملنا</h1>
-    </div>
-    <div class="row g-5">
-        <!-- عضو الفريق 1 -->
-        <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="row g-0">
-                <div class="col-10" style="min-height: 300px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/team-1.jpg" style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="h-100 d-flex flex-column align-items-center justify-content-between bg-light">
-                        <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
-                        <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="bg-light p-4">
-                        <h4 class="text-uppercase">آدم فيليبس</h4>
-                        <span>المؤسس والمدير التنفيذي</span>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- عضو الفريق 2 -->
-        <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="row g-0">
-                <div class="col-10" style="min-height: 300px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/team-2.jpg" style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="h-100 d-flex flex-column align-items-center justify-content-between bg-light">
-                        <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
-                        <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="bg-light p-4">
-                        <h4 class="text-uppercase">ديلان آدامز</h4>
-                        <span>مهندس مدني</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+ <style>
+        .rating {
+            color: #FFD700; /* لون النجوم */
+        }
+        .testimonial {
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
 
-        <!-- عضو الفريق 3 -->
-        <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="row g-0">
-                <div class="col-10" style="min-height: 300px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/team-3.jpg" style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="h-100 d-flex flex-column align-items-center justify-content-between bg-light">
-                        <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
-                        <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="bg-light p-4">
-                        <h4 class="text-uppercase">جون دو</h4>
-                        <span>مصمم داخلي</span>
-                    </div>
-                </div>
-            </div>
+    <div class="container-fluid bg-light py-6 px-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h1 class="display-5 text-uppercase mb-4">آراء <span class="text-primary">عملائنا السعداء</span></h1>
         </div>
-
-        <!-- عضو الفريق 4 -->
-        <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="row g-0">
-                <div class="col-10" style="min-height: 300px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/team-4.jpg" style="object-fit: cover;">
+        <div class="row gx-0 align-items-center">
+            <div class="col-lg-8 mx-auto">
+                <div class="testimonial bg-light">
+                    <div class="mb-4">
+                        <h5>عميل 1:</h5>
+                        <p class="fs-5 mb-0"><i class="fa fa-2x fa-quote-left text-primary me-2"></i> كانت تجربتي رائعة! الجودة عالية والخدمة ممتازة.</p>
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </span>
+                        <span>(4.5 من 5)</span>
                     </div>
-                </div>
-                <div class="col-2">
-                    <div class="h-100 d-flex flex-column align-items-center justify-content-between bg-light">
-                        <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
-                        <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
+                    <div class="mb-4">
+                        <h5>عميل 2:</h5>
+                        <p class="fs-5 mb-0"><i class="fa fa-2x fa-quote-left text-primary me-2"></i> فريق محترف للغاية ونتائج فوق التوقعات. أنصح بالتعامل معهم.</p>
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <span>(5 من 5)</span>
                     </div>
-                </div>
-                <div class="col-12">
-                    <div class="bg-light p-4">
-                        <h4 class="text-uppercase">جوش دان</h4>
-                        <span>رسام</span>
+                    <div class="mb-4">
+                        <h5>عميل 3:</h5>
+                        <p class="fs-5 mb-0"><i class="fa fa-2x fa-quote-left text-primary me-2"></i> تجربة مدهشة! سأعود بالتأكيد لمزيد من المشاريع في المستقبل.</p>
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                        </span>
+                        <span>(4 من 5)</span>
+                    </div>
+                    <div class="mb-4">
+                        <h5>عميل 4:</h5>
+                        <p class="fs-5 mb-0"><i class="fa fa-2x fa-quote-left text-primary me-2"></i> خدمة عملاء ممتازة واهتمام بالتفاصيل. شكراً لكم!</p>
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <span>(5 من 5)</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- نهاية قسم الفريق -->
 
-   <!-- بداية قسم الشهادات -->
+  <!-- بداية قسم الشهادات -->
 <div class="container-fluid bg-light py-6 px-5">
-    <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-        <h1 class="display-5 text-uppercase mb-4">ماذا يقول <span class="text-primary">عملاؤنا السعداء</span>!!!</h1>
-    </div>
-    <div class="row gx-0 align-items-center">
-        <div class="col-xl-4 col-lg-5 d-none d-lg-block">
-            <div style="max-width: 720px; margin: auto; background-color: #fff; padding: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.2); border-radius: 10px;">
-                <video controls style="width: 100%; height: auto; border-radius: 10px;">
-                    <source src="img/1.mp4" type="video/mp4">
-                    المتصفح لا يدعم تشغيل الفيديو.
-                </video>
-            </div>
+    
+  <style>
+        .rating {
+            color: #e5ff00; /* لون النجوم */
+        }
+        .progress {
+            height: 20px;
+        }
+        .testimonial {
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+
+    <div class="container-fluid bg-light py-6 px-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h1 class="display-5 text-uppercase mb-4">تقييماتنا</h1>
         </div>
-        <div class="col-xl-8 col-lg-7 col-md-12">
-            <div class="testimonial bg-light">
-                <div class="owl-carousel testimonial-carousel">
-                    <div class="row gx-4 align-items-center">
-                        <div class="col-xl-4 col-lg-5 col-md-5">
-                            <img class="img-fluid w-100 h-100 bg-light p-lg-3 mb-4 mb-md-0" src="img/1.jpeg" alt="">
-                        </div>
-                        <div class="col-xl-8 col-lg-7 col-md-7">
-                            <h4 class="text-uppercase mb-0">اسم العميل</h4>
-                            <p>المهنة</p>
-                            <p class="fs-5 mb-0"><i class="fa fa-2x fa-quote-left text-primary me-2"></i> دولوريس سيد دوو كلتا تيمبور جوستو دولور إت ستت لورم كاسد لابور دولور لورم إيبسوم. آت لورم لورم ماجنا أوت لابور إت تيمبور ديام تيمبور إرات. إرات دولور ريبوم سيت إيبسوم.</p>
+        <div class="row gx-0 align-items-center">
+            <div class="col-lg-8 mx-auto">
+                <div class="testimonial bg-light">
+                    <h4 class="text-uppercase mb-4">نظرة عامة على الأداء</h4>
+                    <div class="mb-4">
+                        <h5>سنوات الخبرة: <span class="font-weight-bold">10 سنوات</span></h5>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 90%;">90%</div>
                         </div>
                     </div>
-                    <div class="row gx-4 align-items-center">
-                        <div class="col-xl-4 col-lg-5 col-md-5">
-                            <img class="img-fluid w-100 h-100 bg-light p-lg-3 mb-4 mb-md-0" src="img/testimonial-2.jpg" alt="">
+                    <div class="mb-4">
+                        <h5>عدد المشاريع المنفذة: <span class="font-weight-bold">150 مشروع</span></h5>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 85%;">85%</div>
                         </div>
-                        <div class="col-xl-8 col-lg-7 col-md-7">
-                            <h4 class="text-uppercase mb-0">اسم العميل</h4>
-                            <p>المهنة</p>
-                            <p class="fs-5 mb-0"><i class="fa fa-2x fa-quote-left text-primary me-2"></i> دولوريس سيد دوو كلتا تيمبور جوستو دولور إت ستت لورم كاسد لابور دولور لورم إيبسوم. آت لورم لورم ماجنا أوت لابور إت تيمبور ديام تيمبور إرات. إرات دولور ريبوم سيت إيبسوم.</p>
+                    </div>
+                    <div class="mb-4">
+                        <h5>عدد العملاء السعداء: <span class="font-weight-bold">120 عميل</span></h5>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 95%;">95%</div>
                         </div>
+                    </div>
+                    <div class="mb-4">
+                        <h5>تقييم العملاء:</h5>
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </span>
+                        <span>(4.5 من 5)</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 </div>
 <!-- نهاية قسم الشهادات -->
 
@@ -732,30 +691,29 @@
                         <a class="text-white-50" href="#"><i class="fa fa-angle-right me-2"></i>اتصل بنا</a>
                     </div>
                 </div>
-                <div class="col-sm-12">
-                    <h4 class="text-white text-uppercase mb-4">النشرة الإخبارية</h4>
-                    <div class="w-100">
-                        <div class="input-group">
-                            <input type="text" class="form-control border-light" style="padding: 20px 30px;" placeholder="عنوان بريدك الإلكتروني"><button class="btn bg-primary px-4">اشتراك</button>
-                        </div>
-                    </div>
-                </div>
+            
             </div>
         </div>
     </div>
 </div>
-<div class="container-fluid bg-dark bg-light-radial text-white border-top border-primary px-0">
-    <div class="d-flex flex-column flex-md-row justify-content-between">
-        <div class="py-4 px-5 text-center text-md-start">
-            <p class="mb-0">&copy; <a class="text-primary" href="#">المقاولات والبناء الحديث
-</a>. جميع الحقوق محفوظة.</p>
-        </div>
-        <div class="py-4 px-5 bg-primary footer-shape position-relative text-center text-md-end">
-            <p class="mb-0">تم التصميم بواسطة <a class="text-dark" href="https://htmlcodex.com">HTML Codex</a></p>
-            <p class="mb-0">موزع بواسطة <a class="text-dark" href="https://themewagon.com">ThemeWagon</a></p>
+ <style>
+        .centered-container {
+            display: flex;
+            justify-content: center; /* أفقياً */
+            align-items: center; /* عمودياً */
+            height: 10vh; /* ارتفاع كامل الشاشة */
+        }
+    </style>
+
+    <div class="container-fluid bg-dark bg-light-radial text-center text-white border-top border-primary px-0 centered-container">
+        <div class="d-flex flex-column flex-md-row justify-content-between">
+            <div class="py-4 px-5 text-center text-md-start">
+                <p class="mb-0">&copy; <a class="text-primary" href="#">المقاولات والبناء الحديث</a>. جميع الحقوق محفوظة.</p>
+            </div>
         </div>
     </div>
-</div>
+
+
 <!-- نهاية التذييل -->
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg bg-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>

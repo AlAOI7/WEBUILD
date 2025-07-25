@@ -27,18 +27,52 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-<Style>
+           <!-- Font Awesome لتحميل الأيقونات -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+ <style>
+    .fixed-icons {
+      position: fixed;
+      top: 50%;
+      left: 20px;
+      z-index: 9999; /* تأكد أنها فوق كل العناصر */
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
 
-/* مثال: استثناء الصور من الانعكاس */
+    .fixed-icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #25D366; /* لون واتساب */
+      color: white;
+      text-decoration: none;
+      font-size: 24px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
 
+   
+  </style>
 
-</Style>
 </head>
 
 <body>
+
+    
+  <!-- الأيقونات -->
+ <div class="fixed-icons">
+    <a href="https://wa.me/966500000000" target="_blank" title="واتساب">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:966500000000" class="phone" style="background-color:#002fff"  title="اتصال">
+      <i class="fas fa-phone"></i>
+    </a>
+  </div>
   <!-- بداية الشريط العلوي -->
     <div class="container-fluid px-5 d-none d-lg-block">
         <div class="row gx-5">
@@ -347,30 +381,29 @@
                         <a class="text-white-50" href="#"><i class="fa fa-angle-right me-2"></i>اتصل بنا</a>
                     </div>
                 </div>
-                <div class="col-sm-12">
-                    <h4 class="text-white text-uppercase mb-4">النشرة الإخبارية</h4>
-                    <div class="w-100">
-                        <div class="input-group">
-                            <input type="text" class="form-control border-light" style="padding: 20px 30px;" placeholder="عنوان بريدك الإلكتروني"><button class="btn bg-primary px-4">اشتراك</button>
-                        </div>
-                    </div>
-                </div>
+            
             </div>
         </div>
     </div>
 </div>
-<div class="container-fluid bg-dark bg-light-radial text-white border-top border-primary px-0">
-    <div class="d-flex flex-column flex-md-row justify-content-between">
-        <div class="py-4 px-5 text-center text-md-start">
-            <p class="mb-0">&copy; <a class="text-primary" href="#">المقاولات والبناء الحديث
-</a>. جميع الحقوق محفوظة.</p>
-        </div>
-        <div class="py-4 px-5 bg-primary footer-shape position-relative text-center text-md-end">
-            <p class="mb-0">تم التصميم بواسطة <a class="text-dark" href="https://htmlcodex.com">HTML Codex</a></p>
-            <p class="mb-0">موزع بواسطة <a class="text-dark" href="https://themewagon.com">ThemeWagon</a></p>
+ <style>
+        .centered-container {
+            display: flex;
+            justify-content: center; /* أفقياً */
+            align-items: center; /* عمودياً */
+            height: 10vh; /* ارتفاع كامل الشاشة */
+        }
+    </style>
+
+    <div class="container-fluid bg-dark bg-light-radial text-center text-white border-top border-primary px-0 centered-container">
+        <div class="d-flex flex-column flex-md-row justify-content-between">
+            <div class="py-4 px-5 text-center text-md-start">
+                <p class="mb-0">&copy; <a class="text-primary" href="#">المقاولات والبناء الحديث</a>. جميع الحقوق محفوظة.</p>
+            </div>
         </div>
     </div>
-</div>
+
+
 <!-- نهاية التذييل -->
 
     <!-- Back to Top -->
