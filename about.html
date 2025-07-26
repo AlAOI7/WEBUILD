@@ -235,6 +235,41 @@ html, body {
                     <img class="position-absolute w-100 h-100 mt-5 ms-n5" src="img/about.jpg" style="object-fit: cover;" alt="صورة عن الشركة">
                 </div>
             </div>
+             <style>
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .btn-custom {
+            margin: 0 10px;
+            padding: 10px 15px;
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        .btn-whatsapp {
+            background-color: #25D366; /* لون واتساب */
+        }
+        .btn-call {
+            background-color: #002fff; /* لون الاتصال */
+        }
+        .btn-custom:hover {
+            opacity: 0.9; /* تأثير عند التمرير */
+        }
+    </style>
+
+    <div class="container">
+        <div class="contact-buttons">
+            <a href="https://wa.me/+967773748697" target="_blank" title="واتساب" class="btn-custom btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> واتساب
+            </a>
+            <a href="tel:+967773748697" class="btn-custom btn-call" title="اتصال">
+                <i class="fas fa-phone"></i> اتصال
+            </a>
+        </div>
+    </div>
         </div>
     </div>
     <!-- نهاية قسم عن الشركة -->
@@ -242,170 +277,10 @@ html, body {
     <!-- About End -->
 
 
-<!-- بداية قسم الموعد -->
-<div class="container-fluid bg-light py-6 ps-5 pe-0 ">
-    <div class="row gx-5">
-        <div class="col-lg-4 mb-5 mb-lg-0">
-            <div class="mb-4">
-                <h1 class="display-5 text-uppercase mb-4">طلب <span class="text-primary">مكالمة راجعة</span></h1>
-            </div>
-            <p class="mb-5">نونومي إيبسوم أميت تيمبور تاكيماتا فيرو إي إليتر. ديام ديام أوت إت إيوس دوو دوو سيد. لوسم إليتر ساديسبسينج إيوس إت أوت إت ستت جوستو، سيت دولور إت فولوتبوا لابور. إيبسوم إرات إت إي إيبسوم ماجنا ساديسبسينج لوسم. سيت لوسم سيا سانكتوس إيوس. سانكتوس سيت تيمبور دولوريس إيبسوم ستت جوستو سيت إرات إي، سيد ديام سانكتوس تاكيماتا سيت. إت آت فولوتبوا أميت إرات جوستو أميت إي إيبسوم إيوس، إيرمود أكوسام سيا سيد إيبسوم كاسد أوت.</p>
-            <a class="btn bg-primary py-3 ps-5 pe-0 " href="">احصل على عرض سعر</a>
-        </div>
-        <div class="col-lg-8">
-            <div class="bg-white text-center p-5">
-                <form>
-                    <div class="row g-3">
-                        <div class="col-12 col-sm-6">
-                            <input type="text" class="form-control bg-light border-0" placeholder="اسمك" style="height: 55px;">
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <input type="email" class="form-control bg-light border-0" placeholder="بريدك الإلكتروني" style="height: 55px;">
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <div class="date" id="date" data-target-input="nearest">
-                                <input type="text"
-                                    class="form-control bg-light border-0 datetimepicker-input"
-                                    placeholder="تاريخ المكالمة الراجعة" data-target="#date" data-toggle="datetimepicker" style="height: 55px;">
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <div class="time" id="time" data-target-input="nearest">
-                                <input type="text"
-                                    class="form-control bg-light border-0 datetimepicker-input"
-                                    placeholder="وقت المكالمة الراجعة" data-target="#time" data-toggle="datetimepicker" style="height: 55px;">
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <textarea class="form-control bg-light border-0" rows="5" placeholder="الرسالة"></textarea>
-                        </div>
-                        <div class="col-12">
-                            <button class="btn bg-primary w-100 py-3" type="submit">إرسال الطلب</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- نهاية قسم الموعد -->
-
-    <!-- Team Start -->
-  <!-- بداية قسم الفريق -->
-<!-- <div class="container-fluid py-6 ps-5 pe-0 ">
-    <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-        <h1 class="display-5 text-uppercase mb-4">نحن <span class="text-primary">محترفون وخبراء</span> في عملنا</h1>
-    </div>
-    <div class="row g-5">
-      
-        <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="row g-0">
-                <div class="col-10" style="min-height: 300px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/team-1.jpg" style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="h-100 d-flex flex-column align-items-center justify-content-between bg-light">
-                        <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
-                        <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="bg-light p-4">
-                        <h4 class="text-uppercase">آدم فيليبس</h4>
-                        <span>المؤسس والمدير التنفيذي</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-        <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="row g-0">
-                <div class="col-10" style="min-height: 300px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/team-2.jpg" style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="h-100 d-flex flex-column align-items-center justify-content-between bg-light">
-                        <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
-                        <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="bg-light p-4">
-                        <h4 class="text-uppercase">ديلان آدامز</h4>
-                        <span>مهندس مدني</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="row g-0">
-                <div class="col-10" style="min-height: 300px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/team-3.jpg" style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="h-100 d-flex flex-column align-items-center justify-content-between bg-light">
-                        <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
-                        <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="bg-light p-4">
-                        <h4 class="text-uppercase">جون دو</h4>
-                        <span>مصمم داخلي</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-     
-        <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="row g-0">
-                <div class="col-10" style="min-height: 300px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/team-4.jpg" style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="h-100 d-flex flex-column align-items-center justify-content-between bg-light">
-                        <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
-                        <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="bg-light p-4">
-                        <h4 class="text-uppercase">جوش دان</h4>
-                        <span>رسام</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-<!-- نهاية قسم الفريق -->
-
    <!-- بداية التذييل -->
 <div class="footer container-fluid position-relative bg-dark text-center text-white-50 py-6 ps-5 pe-0">
     <div class="row g-5">
+
         <div class="col-lg-12 pe-lg-6">
             <a href="index.html" class="navbar-brand">
                 <h1 class="m-0 display-4 text-uppercase text-white">
