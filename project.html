@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="utf-8">
@@ -7,7 +7,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
@@ -56,7 +56,7 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     }
 
-      * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -65,12 +65,15 @@
 html, body {
     width: 100%;
     height: 100%;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
     background-color: #f8f9fa;
 }
 
+/* تأكد من أن الحاوية تستجيب */
 .container {
-    max-width: 1200px;
+    max-width: 100%; /* <-- اجعلها 100% بدلاً من 1200px أو استخدم media query */
     margin: 0 auto;
     padding: 15px;
 }
@@ -78,6 +81,23 @@ html, body {
 .row {
     margin-left: 0;
     margin-right: 0;
+}
+     @media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
 }
   </style>
 
